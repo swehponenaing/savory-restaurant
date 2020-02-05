@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Our Chefs</title>
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700,400italic,700italic|Merriweather:300,400italic,300italic,400,700italic' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/imagehovereffect.css">
+
+<style type="text/css">
+
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon/icomoon.eot?srf3rx");
+  src: url("../fonts/icomoon/icomoon.eot?srf3rx#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.ttf?srf3rx") format("truetype"), url("../fonts/icomoon/icomoon.woff?srf3rx") format("woff"), url("../fonts/icomoon/icomoon.svg?srf3rx#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+#logo{
+  color: black;
+  font-size: 30px;
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-weight: bold;
+  margin-top: 0%;
+  margin-left: 4%;
+}
+#logo:hover{
+  color: red;
+  transition: 1s;
+  font-size: 33px;
+}
+.topnav {
+  overflow: hidden;
+  /* width: 100%; */
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 16px 16px;
+  text-decoration: none;
+  font-family: Helvetica;
+  font-size: 17px;
+  margin-top: 1%;
+
+}
+
+.dropdown {
+    float: left;
+    overflow:hidden;
+    margin-top: 1%;
+  }
+
+.dropdown .dropbtn {
+    font-size: 17px;
+    border: none;
+    outline: none;
+    color: black;
+    padding: 16px 16px;
+    background-color: inherit;
+    font-family: Helvetica;
+}
+
+
+.dropdown-content {
+    display: none;
+    position:fixed;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+  color: red;
+  text-decoration: none;
+  font-size: 20px;
+  transition: 0.5s;
+
+}
+
+.dropdown-content a:hover {
+    color: red;
+    text-decoration: none;
+    font-size: 22px;
+    transition: 0.5s;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    animation-duration: 1s;
+    transform-style:flat;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display:block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+.chefimg{
+	background-image: url(image/chefs.jpg);
+	min-height: 500px;
+	background-size: cover;
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.center{
+	margin: auto;
+    width: 60%;
+    padding: 5px 0;
+    margin-top: 10%;
+}
+
+.label1{
+	font: normal normal normal 66px/1.4em "Playfair Display", serif;;
+	color: white;
+}
+@media screen and (max-width: 992px) {
+ .label1 {
+    font-size: 70px;
+  }
+}
+.card{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 450px;
+    margin: auto;
+    text-align: center;
+    padding: 10%;
+}
+
+a{
+	text-decoration: none;
+}
+a:hover{
+	opacity: 0.7;
+}
+.fa-facebook{
+	background: #3B5998;
+	color: white;
+}
+.fa-twitter{
+	background: #55ACEE;
+	color: white;
+}
+.fa-instagram{
+	background: #125688;
+	color: white;
+}
+.fa-foursquare{
+	background: #45bbff;
+	color: white;
+}
+.cheffont{
+	font: normal normal normal 16px/1.6em Helvetica Neue;
+	color: black;
+}
+.bg{
+	background-image: url(image/background4.jpeg);
+	background-position: center;
+	background-size: cover;
+	min-height: 1200px;
+}
+.footerlabel1{
+  font: normal normal normal 20px/1.4em Helvetica;
+  color: white;
+  font-weight: bold;
+}
+.footerlabel2{
+  font: normal normal normal 16px/1.4em Helvetica;
+  color: white;
+}
+.bg1{
+  background-color: black;
+}
+.email {
+    width: 100%;
+    padding: 5px 15px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+.email:focus {
+    border: 3px solid #555;
+}
+.btnwidth{
+  width: 100%;
+}
+.footeralignbox{
+  margin-left: 20%;
+  margin-right: 20%;
+}
+.footeralignbox1{
+  margin-left: 21%;
+}
+.nav-link{
+  font: normal normal normal 20px/1.4em Helvetica;
+  color: white;
+}
+.nav-link:hover{
+  color: red;
+}
+.social:hover{
+  opacity: 0.7;
+}
+
+</style>
+</head>
+<body>
+<!-- ************** Nav *************** -->
+<div class="topnav navbar-light bg-light navbar-fixed-top" id="myTopnav">
+  <a href="#top" class="navbar-brand" id="logo">Savory</a>
+  <a href="index.html" id="links">Home</a>
+  <a href="aboutus.html" id="links">About Us</a>
+  <div class="dropdown id="links"">
+    <button class="dropbtn dd">Menu
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="chicken.html">Chicken</a>
+      <a href="chinese.html">Chinese Foods</a>
+      <a href="myanmar.html">Myanmar Foods</a>
+      <a href="noodle.html">Noodle</a>
+      <a href="drinks.html">Drinks</a>
+    </div>
+  </div>
+  <a href="gallery.html" id="links">Gallery</a>
+  <a href="promotion.html" id="links">Promotion</a>
+  <a href="services.html" id="links">Service</a>
+  <a href="contact.html" id="links">Contact</a>
+  <a href="ourchefs.html">Our Chefs</a>
+  <a href="faq.html" id="links">FAQ</a>
+  <a href="#" id="links"><i class="fa fa-shopping-cart" style="color:black; font-size: 25px;"></i><span id="count" style="color:black; font-size: 20px;"><sup>0</sup></span></a>
+  <a href="javascript:void(0);" style="font-size:16px;" class="icon" onclick="myFunction()">&#9776;</a>
+
+</div>  
+<!-- ************** Nav *************** -->
+
+<!-- ************** Container ************* -->
+	
+	<div class="container-fluid">
+	<!-- ************** First Row ************* -->
+		<div class="row">
+			<div class="col-md-12 chefimg">
+				<div class="center" align="center">
+					<h2 class="label1">Meet Our Chefs</h2>
+				</div>
+			</div>
+		</div>
+	<!-- ************** End First Row ************* -->
+		
+
+	<!-- ************** Second Row ************* -->
+	<div class="row bg">
+		
+		<div class="col-md-12">
+		<div class="row">
+			<div class="col-md-4" style="margin-top: 2%;">
+				<div class="card">
+					<div class="hovereffect10">
+						<img src="image/thomaskeller.jpg" class="card-img-top img-responsive" width="100%" height="100%" alt="Thomas Keller">
+						<div class="overlay10">
+							<h2>Thomas Keller</h2>
+						</div>
+					</div>
+					<div class="body">
+						<h2 class="card-title" align="center">Thomas Keller</h2>
+						<p class="card-text text-justify cheffont">
+							Thomas Keller is an American chef, a recipe book writer as well as a restaurateur. Keller obtained no formal culinary training in any school. The popularity he achieved as well as the knowledge he acquired pertaining to food was by doing work in numerous restaurants. He's the one who owns the French Laundry in Napa Valley and he gained the award for the 'Best Californian Chef' in 1997 for his excellent work as being a chef. Being granted a 3-star rating for his particular restaurants Per se and French Laundry around the inaugural Michelin guide for New York, he has only grown to impress the taste buds of more people each year. You might like to get one of his recipe books.
+						</p>
+						<a href="#"><i class="fa fa-facebook" style="padding: 15px; font-size: 20px; width: 50px; text-align: center; margin: 5px 2px;"></i></a>
+						<a href="#"><i class="fa fa-twitter" style="padding: 15px; font-size: 20px; width: 50px; text-align: center; margin: 5px 2px;"></i></a>
+						<a href="#"><i class="fa fa-instagram" style="padding: 15px; font-size: 20px; width: 50px; text-align: center; margin: 5px 2px;"></i></a>
+						<a href="#"><i class="fa fa-foursquare" style="padding: 15px; font-size: 20px; width: 50px; text-align: center; margin: 5px 2px;"></i></a>
+					</div>
+				</div>				
+			</div>
+
+			<div class="col-md-4" style="margin-top: 2%;">
+				<div class="card">
+					<div class="hovereffect10">
+						<img src="image/charlietrotter.jpg" class="card-img-top img-responsive" width="100%" height="100%" alt="Charlie Trotter">
+						<div class="overlay10">
+							<h2>Charlie Trotter</h2>
+						</div>
+					</div>
+					<div class="body">
+						<h2 class="card-title" align="center">Charlie Trotter</h2>
+						<p class="card-text text-justify cheffont">
+							Charlie Trotter, an American chef from Chicago, is the founding father of the popular cooking program, "The MasterChef". He's a restaurateur, a tv star as well as an author. In spite of getting a college degree in Political Science, he discovered the love for food. Having fourteen recipe books and three management books he's among the most recognized writers who definitely are chefs. Affiliated with Charlie Trotter Culinary Education Organization, this guy thinks that food isn't just passion, it's love – and everybody is worthy of it.
+						</p>
+						<a href="#"><i class="fa fa-facebook" style="padding: 15px; font-size: 20px; width: 50px; text-align: center; margin: 5px 2px;"></i></a>
+						<a href="#"><i class="fa fa-twitter" style="padding: 15px; font-size: 20px; width: 50px; text-align: center; margin: 5px 2px;"></i></a>
+						<a href="#"><i class="fa fa-instagram" style="padding: 15px; font-size: 20px; width: 50px; text-align: center; margin: 5px 2px;"></i></a>
+						<a href="#"><i class="fa fa-foursquare" style="padding: 15px; font-size: 20px; width: 50px; text-align: center; margin: 5px 2px;"></i></a>
+					</div>
+				</div>				
+			</div>
+
+			<div class="col-md-4" style="margin-top: 2%;">
+				<div class="card">
+					<div class="hovereffect10">
+						<img src="image/gordonramsay.jpg" class="card-img-top img-responsive" width="100%" height="100%" alt="Gordon Ramsay">
+						<div class="overlay10">
+							<h2>Gordon Ramsay</h2>
+						</div>
+					</div>
+					<div class="body">
+						<h2 class="card-title" align="center">Gordon Ramsay</h2>
+						<p class="card-text text-justify cheffont">
+							Gordon Ramsay is a legendary character in the culinary world and he is a high profiled English chef. He's a British chef, one of the most recognized and painstaking on the cooking field. He's renowned for his intense character, and his unusual skill for food that makes him stand out from the others. From his timeless desire to be a footballer, destiny plotted differently for this cooking wizard who turned to becoming a chef right after being seriously injured during football. The sole chef in the United Kingdom that acquired 10 Michelin Stars (today he has 14) , this guy works magic in his cuisine. He goes beyond cuisines to provide the most delicious foods to his consumers. With shows on Tv such as Ramsay's Kitchen Nightmare, Hell's Kitchen, as well as Masterchef USA, this guy has been successful just like his mentor Marco Pierre White. He cooked his own way and get top into the list.
+						</p>
+						<a href="#"><i class="fa fa-facebook" style="padding: 15px; font-size: 20px; width: 50px; text-align: center; margin: 5px 2px;"></i></a>
+						<a href="#"><i class="fa fa-twitter" style="padding: 15px; font-size: 20px; width: 50px; text-align: center; margin: 5px 2px;"></i></a>
+						<a href="#"><i class="fa fa-instagram" style="padding: 15px; font-size: 20px; width: 50px; text-align: center; margin: 5px 2px;"></i></a>
+						<a href="#"><i class="fa fa-foursquare" style="padding: 15px; font-size: 20px; width: 50px; text-align: center; margin: 5px 2px;"></i></a>
+					</div>
+				</div>				
+			</div>
+		</div>
+		</div>
+	</div>
+	<!-- ************** End Second Row ************* -->
+	<!-- ************** Footer ************* -->
+<div class="row bg1">
+      <div class="col-md-12">
+      <div class="row" style="margin-top: 2%;">
+        <div class="col-md-4">
+          <div class="footeralignbox">
+          <span class="footerlabel1">Address and Phone Number:</span>
+          <br>
+          <p class="footerlabel2">
+            Ground Floor Unit GF 058, Vista Mall Bataan Brgy. Cupang, Balanga, Bataan<br>
+            0917-5160449
+          </p>
+          </div>
+        </div>
+        <div class="col-md-4" style="margin-top: 2%;">
+          <div class="alignbox">
+          <span class="footerlabel1">Opening Hours:</span>
+          <br>
+          <p class="footerlabel2">
+            Monday-Friday: 7:00Am-10:00PM<br>
+            Saturday: 9:00AM-10:00PM<br>
+            Sunday: 8:00AM-11:00PM
+          </p>
+          </div>
+        </div>
+        <div class="col-md-4" style="margin-top: 2%;">
+          <div class="footeralignbox">
+          <span class="footerlabel1">Join Our Mailing List</span><br>
+          <input type="text" name="mailing" placeholder="Email Address:" class="email">
+          <button type="button" class="btn btnwidth">Submit</button>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8" style="margin-top: 2%;">
+          <div class="footeralignbox">
+            <ul class="nav">
+              <li class="nav-item">
+                  <a class="nav-link" href="aboutus.html">About us</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact us</a>
+              </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="promotion.html">Promotion</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="services.html">Service</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href=".html">FAQ</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footeralignbox1">
+            <br>
+            <span class="footerlabel1">Join us on:</span><br>
+            <a href="#" class="social"><i class="fa fa-facebook" style="padding: 10px; font-size: 20px; width: 40px;text-align: center; margin: 5px 2px;"></i></a>
+            <a href="#" class="social"><i class="fa fa-twitter" style="padding: 10px; font-size: 20px; width: 40px;text-align: center; margin: 5px 2px;""></i></a>
+            <a href="#" class="social"><i class="fa fa-instagram" style="padding: 10px; font-size: 20px; width: 40px;text-align: center; margin: 5px 2px;"></i></a>
+            <a href="#" class="social"><i class="fa fa-foursquare" style="padding: 10px; font-size: 20px; width: 40px;text-align: center; margin: 5px 2px;"></i></a>
+          </div>
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+      </div>
+    </div>
+<!-- ************** Footer ************* -->
+
+	</div>
+	<!-- ************** End Container ************* -->	
+	<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>	
+</body>
+</html>

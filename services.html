@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Our Service</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/style1.css">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700,400italic,700italic|Merriweather:300,400italic,300italic,400,700italic' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style type="text/css">
+* {
+    box-sizing: border-box;
+}
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon/icomoon.eot?srf3rx");
+  src: url("../fonts/icomoon/icomoon.eot?srf3rx#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.ttf?srf3rx") format("truetype"), url("../fonts/icomoon/icomoon.woff?srf3rx") format("woff"), url("../fonts/icomoon/icomoon.svg?srf3rx#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+#logo{
+  color: black;
+  font-size: 30px;
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-weight: bold;
+  margin-top: 0%;
+  margin-left: 4%;
+}
+#logo:hover{
+  color: red;
+  transition: 1s;
+  font-size: 33px;
+}
+.topnav {
+  overflow: hidden;
+  /* width: 100%; */
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 16px 16px;
+  text-decoration: none;
+  font-family: Helvetica;
+  font-size: 17px;
+  margin-top: 1%;
+
+
+}
+
+
+.dropdown {
+    float: left;
+    overflow:hidden;
+    margin-top: 1%;
+  }
+
+.dropdown .dropbtn {
+    font-size: 17px;
+    border: none;
+    outline: none;
+    color: black;
+    padding: 16px 16px;
+    background-color: inherit;
+    font-family: Helvetica;
+}
+
+
+.dropdown-content {
+    display: none;
+    position:fixed;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+  color: red;
+  text-decoration: none;
+  font-size: 20px;
+  transition: 0.5s;
+
+}
+
+.dropdown-content a:hover {
+    color: red;
+    text-decoration: none;
+    font-size: 22px;
+    transition: 0.5s;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    animation-duration: 1s;
+    transform-style:flat;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display:block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+.serviceparallax{
+	background-image: url(image/lights.jpeg);
+	min-height: 400px;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.center{
+	  margin: auto;
+    width: 60%;
+    padding: 5px 0;
+    margin-top: 9%;
+}
+.label1{
+  font: normal normal normal 66px/1.4em "Playfair Display", serif;;
+  color: white;
+}
+@media screen and (max-width: 992px) {
+ .label1 {
+    font-size: 70px;
+  }
+}
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: auto;
+    text-align: center;
+    padding: 10%;
+}
+.footerlabel1{
+  font: normal normal normal 20px/1.4em Helvetica;
+  color: white;
+  font-weight: bold;
+}
+.footerlabel2{
+  font: normal normal normal 16px/1.4em Helvetica;
+  color: white;
+}
+.bg1{
+  background-color: black;
+}
+.email {
+    width: 100%;
+    padding: 5px 15px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+.email:focus {
+    border: 3px solid #555;
+}
+.btnwidth{
+  width: 100%;
+}
+.footeralignbox{
+  margin-left: 20%;
+  margin-right: 20%;
+}
+.footeralignbox1{
+  margin-left: 21%;
+}
+.nav-link{
+  font: normal normal normal 20px/1.4em Helvetica;
+  color: white;
+}
+.nav-link:hover{
+  color: red;
+}
+.social:hover{
+  opacity: 0.7;
+}
+
+.fa-facebook{
+  background: #3B5998;
+  color: white;
+}
+.fa-twitter{
+  background: #55ACEE;
+  color: white;
+}
+.fa-instagram{
+  background: #125688;
+  color: white;
+}
+.fa-foursquare{
+  background: #45bbff;
+  color: white;
+}
+
+
+</style>
+</head>
+<body>
+
+	<!-- ************** Nav *************** -->
+<div class="topnav navbar-light bg-light navbar-fixed-top" id="myTopnav">
+  <a href="#top" class="navbar-brand" id="logo">Savory</a>
+  <a href="index.html" id="links">Home</a>
+  <a href="aboutus.html" id="links">About Us</a>
+  <div class="dropdown id="links"">
+    <button class="dropbtn dd">Menu
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="chicken.html">Chicken</a>
+      <a href="chinese.html">Chinese Foods</a>
+      <a href="myanmar.html">Myanmar Foods</a>
+      <a href="noodle.html">Noodle</a>
+      <a href="drinks.html">Drinks</a>
+    </div>
+  </div>
+  <a href="gallery.html" id="links">Gallery</a>
+  <a href="promotion.html" id="links">Promotion</a>
+  <a href="services.html" id="links">Service</a>
+  <a href="contact.html" id="links">Contact</a>
+  <a href="ourchefs.html">Our Chefs</a>
+  <a href="faq.html" id="links">FAQ</a>
+  <a href="#" id="links"><i class="fa fa-shopping-cart" style="color:black; font-size: 25px;"></i><span id="count" style="color:black; font-size: 20px;"><sup>0</sup></span></a>
+  <a href="javascript:void(0);" style="font-size:16px;" class="icon" onclick="myFunction()">&#9776;</a>
+
+</div>  
+<!-- ************** Nav *************** -->
+<!-- ************** Container *************** -->
+
+	<div class="container-fluid">
+
+    <div class="row">
+			<div class="col-md-12 serviceparallax" >
+				<div class="center" align="center">
+					<h1 class="label1">Our Services</h1>
+				</div>
+			</div>
+		</div>
+    <!-- ************** Content *************** -->
+    <div class="row" style="background-image: url(image/1.jpg); min-height: 630px; background-attachment: fixed; background-repeat: no-repeat; background-size: cover; background-position: center;">
+      <div class="col-md-4">
+          <div class="card" style="width:75%; margin-top: 20%; min-height: 450px;">
+            <img class="card-img-top" src="image/delivery1.png" alt="Delivery" style="width: 100%; background-color: white;">
+              <div class="card-body">
+                  <h4 class="card-title" align="center">Deilvery</h4>
+                  <p class="card-text">We have delivery system for different location.</p>
+              </div>
+          </div>
+      </div>
+
+      <div class="col-md-4" style="margin-top: 2%;">
+          <div class="card" style="width:75%; margin-top: 20%; min-height: 450px;">
+            <img class="card-img-top" src="image/wifi.png" alt="Card image" style="width:100%; background-color: white;">
+              <div class="card-body">
+                  <h4 class="card-title" align="center">Free Wifi</h4>
+                  <p class="card-text">You can enjoy free wifi at our restaurant.</p>
+              </div>
+          </div>
+      </div>
+
+      <div class="col-md-4" style="margin-top: 2%;">
+          <div class="card" style="width:75%; margin-top: 20%; min-height: 450px; margin-bottom: 20%;">
+            <img class="card-img-top" src="image/party.png" alt="Card image" style="width:100%; background-color: white;">
+              <div class="card-body">
+                  <h4 class="card-title" align="center">Party</h4>
+                  <p class="card-text">You can make parties in our restaurant.</p>
+              </div>
+          </div>
+      </div>
+      
+    </div>
+    <!-- ************** Content *************** -->
+
+    <!-- ************** Footer ************* -->
+<div class="row bg1">
+      <div class="col-md-12">
+      <div class="row" style="margin-top: 2%;">
+        <div class="col-md-4">
+          <div class="footeralignbox">
+          <span class="footerlabel1">Address and Phone Number:</span>
+          <br>
+          <p class="footerlabel2">
+            Ground Floor Unit GF 058, Vista Mall Bataan Brgy. Cupang, Balanga, Bataan<br>
+            0917-5160449
+          </p>
+          </div>
+        </div>
+        <div class="col-md-4" style="margin-top: 2%;">
+          <div class="alignbox">
+          <span class="footerlabel1">Opening Hours:</span>
+          <br>
+          <p class="footerlabel2">
+            Monday-Friday: 7:00Am-10:00PM<br>
+            Saturday: 9:00AM-10:00PM<br>
+            Sunday: 8:00AM-11:00PM
+          </p>
+          </div>
+        </div>
+        <div class="col-md-4" style="margin-top: 2%;">
+          <div class="footeralignbox">
+          <span class="footerlabel1">Join Our Mailing List</span><br>
+          <input type="text" name="mailing" placeholder="Email Address:" class="email">
+          <button type="button" class="btn btnwidth">Submit</button>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8" style="margin-top: 2%;">
+          <div class="footeralignbox">
+            <ul class="nav">
+              <li class="nav-item">
+                  <a class="nav-link" href="aboutus.html">About us</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact us</a>
+              </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="promotion.html">Promotion</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="services.html">Service</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href=".html">FAQ</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footeralignbox1">
+            <br>
+            <span class="footerlabel1">Join us on:</span><br>
+            <a href="#" class="social"><i class="fa fa-facebook" style="padding: 10px; font-size: 20px; width: 40px;text-align: center; margin: 5px 2px;"></i></a>
+            <a href="#" class="social"><i class="fa fa-twitter" style="padding: 10px; font-size: 20px; width: 40px;text-align: center; margin: 5px 2px;""></i></a>
+            <a href="#" class="social"><i class="fa fa-instagram" style="padding: 10px; font-size: 20px; width: 40px;text-align: center; margin: 5px 2px;"></i></a>
+            <a href="#" class="social"><i class="fa fa-foursquare" style="padding: 10px; font-size: 20px; width: 40px;text-align: center; margin: 5px 2px;"></i></a>
+          </div>
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+      </div>
+    </div>
+<!-- ************** Footer ************* -->
+	</div>
+<!-- ************** Container ************* -->
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+
+</body>
+</html>

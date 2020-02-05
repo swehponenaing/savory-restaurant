@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Myanmar Foods Menu</title>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700,400italic,700italic|Merriweather:300,400italic,300italic,400,700italic' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<script type="text/javascript">
+      var count1=0;
+      var price1=1000;
+      var count2=0;
+      var price2=1000;
+      var count3=0;
+      var price3=1000;
+      var count4=0;
+      var price4=1500;
+      var count5=0;
+      var price5=1000;
+      var count6=0;
+      var price6=1000;
+      var count7=0;
+      var price7=2000;
+      var count8=0;
+      var price8=2000;
+      var total=0;
+      var totalcount=0;
+
+    function addClick(num)
+    {
+      totalcount++;
+
+      if(num==1)
+      {
+        document.getElementById("chart1").style.display="block";
+        count1++;
+        document.getElementById("q1").innerHTML=count1;
+        document.getElementById("t1").innerHTML=count1*price1;
+        total+=price1;
+
+      }
+      else if(num==2)
+      {
+        document.getElementById("chart2").style.display="block";
+        count2++;
+        document.getElementById("q2").innerHTML=count2;
+        document.getElementById("t2").innerHTML=count2*price2;
+        total+=price2;
+      }
+      else if(num==3)
+      {
+        document.getElementById("chart3").style.display="block";
+        count3++;
+        document.getElementById("q3").innerHTML=count3;
+        document.getElementById("t3").innerHTML=count3*price3;
+        total+=price3;
+      }
+      else if(num==4)
+      {
+        document.getElementById("chart4").style.display="block";
+        count4++;
+        document.getElementById("q4").innerHTML=count4;
+        document.getElementById("t4").innerHTML=count4*price4;
+        total+=price4;
+      }
+      else if(num==5)
+      {
+        document.getElementById("chart5").style.display="block";
+        count5++;
+        document.getElementById("q5").innerHTML=count5;
+        document.getElementById("t5").innerHTML=count5*price5;
+        total+=price5;
+      }
+      else if(num==6)
+      {
+        document.getElementById("chart6").style.display="block";
+        count6++;
+        document.getElementById("q6").innerHTML=count6;
+        document.getElementById("t6").innerHTML=count6*price6;
+        total+=price6;
+      }
+      else if(num==7)
+      {
+        document.getElementById("chart7").style.display="block";
+        count7++;
+        document.getElementById("q7").innerHTML=count7;
+        document.getElementById("t7").innerHTML=count7*price7;
+        total+=price7;
+      }
+      else if(num==8)
+      {
+        document.getElementById("chart8").style.display="block";
+        count8++;
+        document.getElementById("q8").innerHTML=count8;
+        document.getElementById("t8").innerHTML=count8*price8;
+        total+=price8;
+      }
+      document.getElementById("ans").innerHTML=total;
+      document.getElementById("count").innerHTML=totalcount;
+    }
+    function myForm()
+    {
+      document.getElementById("form-container1").setAttribute("id","display");
+      document.getElementById("aa").setAttribute("id","bga");
+    }
+    function showMain()
+    {
+      document.getElementById("display").setAttribute("id","form-container1");
+      count1=0;
+      count2=0;
+      count3=0;
+      count4=0;
+      totalcount=0;
+      total=0;
+
+      document.getElementById("count").innerHTML=0;
+      document.getElementById("ans").innerHTML=0;
+      document.getElementById("chart1").style.display="none";
+      document.getElementById("chart2").style.display="none";
+      document.getElementById("chart3").style.display="none";
+      document.getElementById("chart4").style.display="none";
+      document.getElementById("chart5").style.display="none";
+      document.getElementById("chart6").style.display="none";
+      document.getElementById("chart7").style.display="none";
+      document.getElementById("chart8").style.display="none";
+      /*for(var i=1;1<=5;i++) 
+      {
+        document.getElementById("chart"+i).style.display="none";
+      }*/
+
+      document.getElementById("bga").setAttribute("id","aa");
+
+    }
+    function closeForm()
+    {
+      document.getElementById("display").setAttribute("id","form-container1");
+      document.getElementById("count").innerHTML=totalcount;
+      document.getElementById("bga").setAttribute("id","aa");
+    }
+  </script>
+
+<style type="text/css">
+  @font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon/icomoon.eot?srf3rx");
+  src: url("../fonts/icomoon/icomoon.eot?srf3rx#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.ttf?srf3rx") format("truetype"), url("../fonts/icomoon/icomoon.woff?srf3rx") format("woff"), url("../fonts/icomoon/icomoon.svg?srf3rx#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+#logo{
+  color: black;
+  font-size: 30px;
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-weight: bold;
+  margin-top: 0%;
+  margin-left: 4%;
+}
+#logo:hover{
+  color: red;
+  transition: 1s;
+  font-size: 33px;
+}
+.topnav {
+  overflow: hidden;
+  /* width: 100%; */
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 16px 16px;
+  text-decoration: none;
+  font-family: Helvetica;
+  font-size: 17px;
+  margin-top: 1%;
+
+}
+
+.dropdown {
+    float: left;
+    overflow:hidden;
+    margin-top: 1%;
+  }
+
+.dropdown .dropbtn {
+    font-size: 17px;
+    border: none;
+    outline: none;
+    color: black;
+    padding: 16px 16px;
+    background-color: inherit;
+    font-family: Helvetica;
+}
+
+
+.dropdown-content {
+    display: none;
+    position:fixed;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+  color: red;
+  text-decoration: none;
+  font-size: 20px;
+  transition: 0.5s;
+
+}
+
+.dropdown-content a:hover {
+    color: red;
+    text-decoration: none;
+    font-size: 22px;
+    transition: 0.5s;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    animation-duration: 1s;
+    transform-style:flat;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display:block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+.menuparallax{
+  background-image: url(image/banner.jpg);
+  min-height: 400px;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.center{
+  margin: auto;
+    width: 60%;
+    padding: 5px 0;
+    margin-top: 8%;
+}
+
+.label1{
+  font: normal normal normal 66px/1.4em "Playfair Display", serif;;
+  color: white;
+}
+@media screen and (max-width: 992px) {
+ .label1 {
+    font-size: 50px;
+    margin-top: 20%;
+  }
+}
+
+
+.footerlabel1{
+  font: normal normal normal 20px/1.4em Helvetica;
+  color: white;
+  font-weight: bold;
+}
+.footerlabel2{
+  font: normal normal normal 16px/1.4em Helvetica;
+  color: white;
+}
+.bg1{
+  background-color: black;
+}
+.email {
+    width: 100%;
+    padding: 5px 15px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+.email:focus {
+    border: 3px solid #555;
+}
+.btnwidth{
+  width: 100%;
+}
+.footeralignbox{
+  margin-left: 20%;
+  margin-right: 20%;
+}
+.footeralignbox1{
+  margin-left: 21%;
+}
+.nav-link{
+  font: normal normal normal 20px/1.4em Helvetica;
+  color: white;
+}
+.nav-link:hover{
+  color: red;
+}
+.social:hover{
+  opacity: 0.7;
+}
+
+.fa-facebook{
+  background: #3B5998;
+  color: white;
+}
+.fa-twitter{
+  background: #55ACEE;
+  color: white;
+}
+.fa-instagram{
+  background: #125688;
+  color: white;
+}
+.fa-foursquare{
+  background: #45bbff;
+  color: white;
+}
+
+#display{
+  width: 50%;
+  height: auto;
+  position: fixed;
+  display: block;
+  left: 25%;
+  top: 5px;
+  z-index: 1;
+  border-radius: 10px;
+  box-shadow: 3px 3px 12px blue;
+  padding: 15px;
+  background: white;
+}
+#form-container1{
+      display: none;
+}
+#bga{
+  width: 80%;
+  height: 700px;
+  margin-left: 10%;
+  background: white;
+  opacity: 0.1;
+}
+</style>
+</head>
+<body>
+<!-- ************** Nav *************** -->
+<div class="topnav navbar-light bg-light navbar-fixed-top" id="myTopnav">
+  <a href="#top" class="navbar-brand" id="logo">Savory</a>
+  <a href="index.html">Home</a>
+  <a href="aboutus.html">About Us</a>
+  <div class="dropdown">
+    <button class="dropbtn dd">Menu
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="chicken.html">Chicken</a>
+      <a href="chinese.html">Chinese Foods</a>
+      <a href="myanmar.html">Myanmar Foods</a>
+      <a href="noodle.html">Noodle</a>
+      <a href="drinks.html">Drinks</a>
+    </div>
+  </div>
+  <a href="gallery.html">Gallery</a>
+  <a href="promotion.html">Promotion</a>
+  <a href="services.html">Service</a>
+  <a href="contact.html">Contact</a>
+  <a href="ourchefs.html">Our Chefs</a>
+  <a href="faq.html">FAQ</a>
+  <a href="#" ><button onclick="myForm()" style="background: transparent; border: 0px;"><i class="fa fa-shopping-cart" style="color:black; font-size: 25px;"></i><span id="count" style="color:black; font-size: 20px;"><sup>0</sup></span></button></a>
+  <a href="javascript:void(0);" style="font-size:16px;" class="icon" onclick="myFunction()">&#9776;</a>
+
+</div>  
+<!-- ************** Nav *************** --> 
+
+<!-- ************** Content *************** --> 
+  <div class="container-fluid">
+  
+  <div class="row">
+    <div class="col-md-12 menuparallax">
+      <div class="center" align="center">
+          <h1 class="label1">Myanmar Foods Menu</h1>
+        </div>
+    </div>
+  </div>
+
+    <div id="aa"> 
+<!-- ************** First Row *************** --> 
+    <div class="row" style="margin-top: 2%;">
+      <div class="col-md-3">
+        <div class="card" style="min-height: 420px;">
+          <div class="card-header">
+            <img src="image/mohinga.jpg" style="width: 100%; height: 200px;">
+          </div>
+          <div class="card-body">
+            <h2 style="font: Helvetica; font-size: 20px; font-weight: bold; color: black;">Mohinga</h2><br>
+            <span style="font: Helvetica; font-size: 14px; font-weight: bold; color: black;">Price: 1000 Ks</span>
+        </div>
+          <div class="card-footer"><button onclick="addClick(1)" class="btn btn-dark">Order Now</button></div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card" style="min-height: 420px;">
+          <div class="card-header">
+            <img src="image/motee.jpg" style="width: 100%; height: 200px;">
+          </div>
+          <div class="card-body">
+            <h2 style="font: Helvetica; font-size: 20px; font-weight: bold; color: black;">Rakhine Mote Tee</h2><br>
+            <span style="font: Helvetica; font-size: 14px; font-weight: bold; color: black;">Price: 1000 Ks</span>
+          </div>
+          <div class="card-footer"><button onclick="addClick(2)" class="btn btn-dark">Order Now</button></div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card" style="min-height: 420px;">
+          <div class="card-header">
+            <img src="image/ohnno.jpg" style="width: 100%; height: 200px;">
+          </div>
+          <div class="card-body">
+            <h2 style="font: Helvetica; font-size: 20px; font-weight: bold; color: black;">Ohn No Khouk Swel</h2><br>
+            <span style="font: Helvetica; font-size: 14px; font-weight: bold; color: black;">Price: 1000 Ks</span>
+          </div>
+          <div class="card-footer"><button onclick="addClick(3)" class="btn btn-dark">Order Now</button></div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card" style="min-height: 420px;">
+          <div class="card-header">
+            <img src="image/shanrice.jpg" style="width: 100%; height: 200px;">
+          </div>
+          <div class="card-body">
+            <h2 style="font: Helvetica; font-size: 20px; font-weight: bold; color: black;">Shan-style Rice</h2><br>
+            <span style="font: Helvetica; font-size: 14px; font-weight: bold; color: black;">Price: 1500 Ks</span>
+          </div>
+          <div class="card-footer"><button onclick="addClick(4)" class="btn btn-dark">Order Now</button></div>
+        </div>
+      </div>
+    </div>
+<!-- ************** End First Row *************** --> 
+
+<!-- ************** Second Row *************** --> 
+    <div class="row" style="margin-top: 2%; margin-bottom: 2%;">
+      <div class="col-md-3">
+        <div class="card" style="min-height: 420px;">
+          <div class="card-header">
+            <img src="image/lephet.jpg" style="width: 100%; height: 200px;">
+          </div>
+          <div class="card-body">
+            <h2 style="font: Helvetica; font-size: 20px; font-weight: bold; color: black;">Lephet Thoke</h2><br>
+            <span style="font: Helvetica; font-size: 14px; font-weight: bold; color: black;">Price: 1000 Ks</span>
+        </div>
+          <div class="card-footer"><button onclick="addClick(5)" class="btn btn-dark">Order Now</button></div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card" style="min-height: 420px;">
+          <div class="card-header">
+            <img src="image/nangyi.jpg" style="width: 100%; height: 200px;">
+          </div>
+          <div class="card-body">
+            <h2 style="font: Helvetica; font-size: 20px; font-weight: bold; color: black;">Nan Gyi Thoke</h2><br>
+            <span style="font: Helvetica; font-size: 14px; font-weight: bold; color: black;">Price: 1000 Ks</span>
+          </div>
+          <div class="card-footer"><button onclick="addClick(6)" class="btn btn-dark">Order Now</button></div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card" style="min-height: 420px;">
+          <div class="card-header">
+            <img src="image/coconutrice.jpg" style="width: 100%; height: 200px;">
+          </div>
+          <div class="card-body">
+            <h2 style="font: Helvetica; font-size: 20px; font-weight: bold; color: black;">Coconut Rice with Chicken Curry</h2><br>
+            <span style="font: Helvetica; font-size: 14px; font-weight: bold; color: black;">Price: 2000 Ks</span>
+          </div>
+          <div class="card-footer"><button onclick="addClick(7)" class="btn btn-dark">Order Now</button></div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card" style="min-height: 420px;">
+          <div class="card-header">
+            <img src="image/poneyaygyi.jpg" style="width: 100%; height: 200px;">
+          </div>
+          <div class="card-body">
+            <h2 style="font: Helvetica; font-size: 20px; font-weight: bold; color: black;">Pone Yay Gyi Rice</h2><br>
+            <span style="font: Helvetica; font-size: 14px; font-weight: bold; color: black;">Price: 2000 Ks</span>
+          </div>
+          <div class="card-footer"><button onclick="addClick(8)" class="btn btn-dark">Order Now</button></div>
+        </div>
+      </div>
+    </div>
+    <!-- ************** End Second Row *************** --> 
+    </div>
+<!-- ************** Content *************** --> 
+
+<!-- ************** Order Form *************** --> 
+<div id="form-container1">
+      
+      <div id="chart1" style="display: none;">
+        Mohinga&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Price: 3000 Kyats&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Qty: <span id="q1"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Total:<span id="t1"> kyats </span>
+      </div><br>
+
+      <div id="chart2" style="display: none;">
+        Motee&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Price: 1000 Kyats&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Qty: <span id="q2"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Total:<span id="t2"> kyats </span>
+      </div><br>
+
+      <div id="chart3" style="display: none;">
+        Ohn No Khouk Swel&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Price: 1000 Kyats&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Qty: <span id="q3"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Total:<span id="t3"> kyats </span>
+      </div><br>
+
+      <div id="chart4" style="display: none;">
+        Shan-style Rice&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Price: 1500 Kyats&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Qty: <span id="q4"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Total:<span id="t4"> kyats </span>
+      </div><br>
+
+      <div id="chart5" style="display: none;">
+        Lephet Thoke&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Price: 1000 Kyats&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Qty: <span id="q5"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Total:<span id="t5"> kyats </span>
+      </div><br>
+
+      <div id="chart6" style="display: none;">
+        Nan Gyi Thoke&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Price: 1000 Kyats&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Qty: <span id="q6"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Total:<span id="t6"> kyats </span>
+      </div><br>
+
+      <div id="chart7" style="display: none;">
+        Coconut Rice with Chicken Curry&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Price: 2000 Kyats&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Qty: <span id="q7"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Total:<span id="t7"> kyats </span>
+      </div><br>
+
+      <div id="chart8" style="display: none;">
+        Pone Yay Gyi Rice&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Price: 2000 Kyats&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Qty: <span id="q8"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Total:<span id="t8"> kyats </span>
+      </div><br>
+      
+      <hr>
+
+      <div style="padding-left: 18%;">Total Charges:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span id="ans"></span> Kyats</div><br>
+      Choose one of the payment type:<br>
+
+      <i class="fa fa-cc-paypal" style="font-size: 30px;" onclick="document.getElementById('payment').style.display='block'"></i>
+      <i class="fa fa-cc-visa" style="font-size: 30px;" onclick="document.getElementById('payment').style.display='block'"></i>
+      <i class="fa fa-cc-mastercard" style="font-size: 30px;" onclick="document.getElementById('payment').style.display='block'"></i>
+      <i class="fa fa-cc-credit-card" style="font-size: 30px;" onclick="document.getElementById('payment').style.display='block'"></i>
+
+      <div id="payment" style="display:none;">
+        <form>
+          Account:&nbsp;&nbsp;&nbsp;
+          <input type="text" name="" size="30">
+          <button onclick="showMain()">Payment</button>
+        </form>
+      </div>  
+      <br>
+      <button onclick="closeForm()">Close</button>
+    
+</div>
+<!-- ************** Order Form *************** --> 
+
+
+
+<!-- ************** Footer ************* -->
+<div class="row bg1">
+      <div class="col-md-12">
+      <div class="row" style="margin-top: 2%;">
+        <div class="col-md-4">
+          <div class="footeralignbox">
+          <span class="footerlabel1">Address and Phone Number:</span>
+          <br>
+          <p class="footerlabel2">
+            Ground Floor Unit GF 058, Vista Mall Bataan Brgy. Cupang, Balanga, Bataan<br>
+            0917-5160449
+          </p>
+          </div>
+        </div>
+        <div class="col-md-4" style="margin-top: 2%;">
+          <div class="footeralignbox">
+          <span class="footerlabel1">Opening Hours:</span>
+          <br>
+          <p class="footerlabel2">
+            Monday-Friday: 7:00Am-10:00PM<br>
+            Saturday: 9:00AM-10:00PM<br>
+            Sunday: 8:00AM-11:00PM
+          </p>
+          </div>
+        </div>
+        <div class="col-md-4" style="margin-top: 2%;">
+          <div class="footeralignbox">
+          <span class="footerlabel1">Join Our Mailing List</span><br>
+          <input type="text" name="mailing" placeholder="Email Address:" class="email">
+          <button type="button" class="btn btnwidth">Submit</button>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8" style="margin-top: 2%;">
+          <div class="footeralignbox">
+            <ul class="nav">
+              <li class="nav-item">
+                  <a class="nav-link" href="aboutus.html">About us</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact us</a>
+              </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="promotion.html">Promotion</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="services.html">Service</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href=".html">FAQ</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footeralignbox1">
+            <br>
+            <span class="footerlabel1">Join us on:</span><br>
+            <a href="#" class="social"><i class="fa fa-facebook" style="padding: 10px; font-size: 20px; width: 40px;text-align: center; margin: 5px 2px;"></i></a>
+            <a href="#" class="social"><i class="fa fa-twitter" style="padding: 10px; font-size: 20px; width: 40px;text-align: center; margin: 5px 2px;""></i></a>
+            <a href="#" class="social"><i class="fa fa-instagram" style="padding: 10px; font-size: 20px; width: 40px;text-align: center; margin: 5px 2px;"></i></a>
+            <a href="#" class="social"><i class="fa fa-foursquare" style="padding: 10px; font-size: 20px; width: 40px;text-align: center; margin: 5px 2px;"></i></a>
+          </div>
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+      </div>
+    </div>
+<!-- ************** Footer ************* -->
+  
+  </div>
+<!-- ************** Container ************* -->
+
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}     
+</script>
+</body>
+</html>

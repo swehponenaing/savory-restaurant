@@ -1,0 +1,44 @@
+body{
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+*{
+	border: 0px solid black;
+}
+@font-face {
+	font-family: "Museo-W01-700";
+	src: url(https://static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/28d74e9b-4ea9-4e3c-b265-c67a72c66856.woff);
+}
+@font-face {
+	font-family: "Avenir-LT-W01_35-Light1475496";
+	src: url(https://static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/0078f486-8e52-42c0-ad81-3c8d3d43f48e.woff2);
+}
+@font-face {
+    font-family: "Museo-Slab-W01-100";
+    src: url(https://static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/cacc0862-f146-4746-92b1-60e6114a66c4.woff);
+}
+.titleline{
+	border-top: 4px solid black;
+}
+.title{
+	background-color: black;
+	color: white;
+}
+.title h2{
+	font: normal normal normal 20px/1.4em Helvetica Neue;
+}
+
+.about1 p{
+	font-family: "Source Sans Pro";
+	font-size: 18px;
+	line-height: 25px;
+	font-weight: 400;
+	color: #333333;
+}
+hr{
+	background-color: black;
+}
+.content p{
+	padding: 50px 50px 50px 50px;
+}
+
+

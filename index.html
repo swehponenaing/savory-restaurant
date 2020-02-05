@@ -1,0 +1,796 @@
+<!DOCTYPE>
+<html>
+<head>
+	<title>Home</title>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700,400italic,700italic|Merriweather:300,400italic,300italic,400,700italic' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style type="text/css">
+* {
+    box-sizing: border-box;
+}
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon/icomoon.eot?srf3rx");
+  src: url("../fonts/icomoon/icomoon.eot?srf3rx#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.ttf?srf3rx") format("truetype"), url("../fonts/icomoon/icomoon.woff?srf3rx") format("woff"), url("../fonts/icomoon/icomoon.svg?srf3rx#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+#logo{
+  color: black;
+  font-size: 30px;
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-weight: bold;
+  margin-top: 0%;
+  margin-left: 4%;
+}
+#logo:hover{
+  color: red;
+  transition: 1s;
+  font-size: 33px;
+}
+.topnav {
+  overflow: hidden;
+  /* width: 100%; */
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 16px 16px;
+  text-decoration: none;
+  font-family: Helvetica;
+  font-size: 17px;
+  margin-top: 1%;
+
+}
+
+.dropdown {
+    float: left;
+    overflow:hidden;
+    margin-top: 1%;
+  }
+
+.dropdown .dropbtn {
+    font-size: 17px;
+    border: none;
+    outline: none;
+    color: black;
+    padding: 16px 16px;
+    background-color: inherit;
+    font-family: Helvetica;
+}
+
+
+.dropdown-content {
+    display: none;
+    position:fixed;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+  color: red;
+  text-decoration: none;
+  font-size: 20px;
+  transition: 0.5s;
+
+}
+
+.dropdown-content a:hover {
+    color: red;
+    text-decoration: none;
+    font-size: 22px;
+    transition: 0.5s;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    animation-duration: 1s;
+    transform-style:flat;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display:block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+.header-container{
+	width: 100%;
+	height: auto;
+	border-left: none;
+	border-right: none;
+	position: relative;
+	padding: 20px;
+}
+.background-wrap{
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+#myVideo {
+    position: absolute;
+    z-index: -1;
+    opacity: 0.78;
+    width: 100%;
+
+    
+}
+
+.center{
+    width: 80%;
+    margin: auto;
+    padding: 5px 0;
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+
+@media screen and (max-width: 480px) {
+	.header-container{
+		height: 220px;
+	}
+}
+
+.label1{
+	font-family: "Playfair Display", serif;
+	font-size: 300px;
+	font-weight: 700;
+	font-style: italic;
+	color: white;
+	letter-spacing: 3px;
+}
+.label2{
+	font-family: "Merriweather", serif;
+	font-size: 40px;
+	font-weight: 300;
+	letter-spacing: 2px;
+	color: white;
+}
+@media screen and (max-width: 992px) {
+ .label1 {
+    font-size: 70px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .label2 {
+    font-size: 17px;
+  }
+}
+.about{
+	min-height: 600px;
+	display: flex;
+	margin-top: 0%;
+}
+.alignbox{
+	padding-left: 14%;
+	padding-right: 14%;
+	margin-top: 5%;
+}
+.heading{
+	font-family: "Playfair Display", serif;
+	font-size: 30px;
+	font-weight: 300;
+	color: white;
+	font-style: italic;
+	text-align: center;
+}
+.content{
+	font-family: "Merriweather", serif;
+	font-size: 18px;
+	font-weight: 300;
+	color: #a99c92;
+	margin-top: 7%;
+
+}
+.firstcharacter{
+	float: left;
+	font-size: 75px;
+	line-height: 60px;
+	padding-top: 4px;
+	padding-right: 10px;
+	padding-left: 3px;
+	font-style: italic;
+	top: -20px;
+	position: relative;
+	color: #fff;
+	font-family: "Playfair Display", serif;
+
+}
+.bar{
+	padding-top: 3%;
+	border-bottom: 3px solid #F16104;;
+	width: 45px;
+	height: 2px;
+	margin-left: 46%;
+}
+.button{
+	border: 2px solid black;
+    color: white;
+    padding: 6px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: transparent;;
+}
+.orange{
+	border-color: #F16104;
+
+    }
+.orange:hover{
+	background-color: #F16104;
+	color: white;
+}
+@media screen and (max-width: 768px) {
+  .firstcharacter {
+    font-size: 55px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .content {
+    font-size: 14px;
+  }
+}
+
+.slideshow-container {
+  position: relative;
+  margin-left: 15%;
+  width: 70%;
+}
+
+
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+
+.quote{
+  font-family: "Merriweather", serif;
+  font-size: 40px;
+  font-weight: 300;
+  line-height: 1.5;
+  color: #5e493a;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+
+.dot-container {
+  text-align: center;
+  padding: 20px;
+  background: transparent;
+}
+
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.author {
+  font-family: "Merriweather", serif;
+  font-size: 20px;
+  color: gray;
+  line-height: 1.5;
+} 
+@media screen and (max-width: 992px) {
+ .quote {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .author {
+    font-size: 10px;
+  }
+}
+.parallax1{
+    background-image: url("image/3.jpg");
+    min-height: 600px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.innercontainer{
+	margin: auto;
+    width: 70%;
+    padding: 5px 0;
+    margin-top: 5%;
+}
+.btnsize{
+	width: 180px;
+	height: 40px;
+}
+.btncolor{
+	background: rgb(255, 255, 255); 
+}
+.booknow{
+	background-color: #F16104;
+	font: normal normal normal 15px/1.42em Merriweather,serif;
+	color: white;
+}
+
+.label3{
+	font: normal normal normal 40px/1.5em Merriweather,serif;
+	color: white;
+}
+
+.footerlabel1{
+  font: normal normal normal 20px/1.4em Helvetica;
+  color: white;
+  font-weight: bold;
+}
+.footerlabel2{
+  font: normal normal normal 16px/1.4em Helvetica;
+  color: white;
+}
+.bg1{
+  background-color: black;
+}
+.email {
+    width: 100%;
+    padding: 5px 15px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+.email:focus {
+    border: 3px solid #555;
+}
+.btnwidth{
+  width: 100%;
+}
+.footeralignbox{
+  margin-left: 15%;
+  margin-right: 15%;
+}
+.footeralignbox1{
+  margin-left: 21%;
+}
+.nav-link{
+  font: normal normal normal 20px/1.4em Helvetica;
+  color: white;
+}
+.nav-link:hover{
+  color: red;
+}
+.social:hover{
+  opacity: 0.7;
+}
+
+.fa-facebook{
+  background: #3B5998;
+  color: white;
+}
+.fa-twitter{
+  background: #55ACEE;
+  color: white;
+}
+.fa-instagram{
+  background: #125688;
+  color: white;
+}
+.fa-foursquare{
+  background: #45bbff;
+  color: white;
+}
+
+</style>
+
+</head>
+<body>
+<!-- ************** Nav *************** -->
+<div class="topnav navbar-light bg-light navbar-fixed-top" id="myTopnav">
+  <a href="#top" class="navbar-brand" id="logo">Savory</a>
+  <a href="index.html" id="links">Home</a>
+  <a href="aboutus.html" id="links">About Us</a>
+  <div class="dropdown id="links"">
+    <button class="dropbtn dd">Menu
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="chicken.html">Chicken</a>
+      <a href="chinese.html">Chinese Foods</a>
+      <a href="myanmar.html">Myanmar Foods</a>
+      <a href="noodle.html">Noodle</a>
+      <a href="drinks.html">Drinks</a>
+    </div>
+  </div>
+  <a href="gallery.html" id="links">Gallery</a>
+  <a href="promotion.html" id="links">Promotion</a>
+  <a href="services.html" id="links">Service</a>
+  <a href="contact.html" id="links">Contact</a>
+  <a href="ourchefs.html" id="links">Our Chefs</a>
+  <a href="faq.html" id="links">FAQ</a>
+  <a href="#" id="links"><i class="fa fa-shopping-cart" style="color:black; font-size: 25px;"></i><span id="count" style="color:black; font-size: 20px;"><sup>0</sup></span></a>
+  <a href="javascript:void(0);" style="font-size:16px;" class="icon" onclick="myFunction()">&#9776;</a>
+
+</div>  
+<!-- ************** Nav *************** -->
+
+	
+<!-- ************** Header************* -->
+	<div class="container-fluid">
+		<div class="row" style="height: 100%;">
+	
+			<div class="header-container">
+				<div class="background-wrap">
+					<video autoplay muted loop id="myVideo">
+  					<source src="video/savory.mp4" type="video/mp4">
+  					Your browser does not support HTML5 video.
+				</video>
+				</div>
+				<div class="center" align="center">
+					<h1 class="label1">Savory</h1>
+					<h2 class="label2">Since-1950</h2>
+				</div>
+			</div>
+
+		</div>
+
+<!-- ************** Header************* -->
+
+
+<!-- ************** About************* -->
+
+		<div class="row about">
+			<div class="col-md-6" style="background-image: url(image/food.jpg); min-height: 600px; display: flex; background-size: cover; background-position: center;">
+			</div>
+			<div class="col-md-6" style="background: url(image/wood_1.png);">
+				<div class="alignbox">
+					<h2 class="heading">About Us</h2>
+					<div class="bar"></div>
+					<p class="content"><span class="firstcharacter">S</span>avory Restaurant was introduced in 1950 by the Ting brothers. avory Chicken is known as its distinctive tasty, juicy and tender chicken. Aside from the Savory Chickem, the menu also includes other popular Chinese dishes. After over 50 years, the third generation of the Ting family who opened the first Savory branch in Escolta are re-launching the branch via Classic Savory mall outlets so that more of the younger generations can continue to Savory this unique fried chicken and its other specialities. Classic Savory is scheduled to open more branches in global this year to serve our growing clients.</p>
+					<p class="text-center"><a href="contact.html"><button class="button orange">Get in Touch</button></a></p>
+				</div>
+			</div>
+		</div>
+<!-- ************** About ************* -->
+
+<!-- ************** Quote ************* -->
+		<div class="row">
+			<div class="col-md-12" style="  background: url(image/sliderbg.jpg); background-repeat: no-repeat; background-position: center; background-size: cover;">
+				<div class="slideshow-container">
+
+					<div class="mySlides">
+    					<q class="quote">Cooking is an art, but all art requires knowing something about the techniques and materials</q>
+    					<p class="author">- Nathan Myhrvold</p>
+
+  					</div>
+
+  					<div class="mySlides">
+    					<q class="quote">Find something you're passionate about and keep tremendously interested in it.</q>
+    					<p class="author">- Julia Child</p>
+
+  					</div>
+
+  					<div class="mySlides">
+    					<q class="quote">Give a man food, and he can eat for a day. Give a man a job, and he can only eat for 30 minutes on break.</q>
+    					<p class="author">- Lev L. Spiro</p>
+  					</div>
+
+  					<div class="mySlides">
+    					<q class="quote">Never work before breakfast; if you have to work before breakfast, eat your breakfast first.</q>
+    					<p class="author">- Josh Billings</p>
+  					</div>
+
+  
+  					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  					<a class="next" onclick="plusSlides(1)">&#10095;</a>
+				</div>
+
+				<div class="dot-container">
+  					<span class="dot" onclick="currentSlide(1)"></span>
+  					<span class="dot" onclick="currentSlide(2)"></span>
+  					<span class="dot" onclick="currentSlide(3)"></span>
+  					<span class="dot" onclick="currentSlide(4)"></span>
+				</div>
+			</div>
+		</div>
+<!-- ************** Quote ************* -->
+
+<!-- ************** Parallax Image ************* -->
+		<div class="row">
+			<div class="col-md-12 parallax1">
+				
+			</div>
+		</div>
+<!-- ************** Parallax Image************* -->
+
+<!-- ************** Reservation ************* -->
+		<div class="row">
+			<div class="col-md-12" style="height: 350px; background-color: #233237;">
+				<div class="innercontainer" align="center">
+					<span class="label3">Make a Reservation</span>
+					<br><br>
+					<div class="row">
+						<div class="col-md-3" align="center">
+							<div class="btn-group">
+								<button type="button" class="btn btncolor btnsize" style="font-size: 16px;">Date</button>
+								<button type="button" class="btn btncolor dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"></button>
+								<div class="dropdown-menu">
+									<a class="dropdown-item" href="#">Link1</a>
+									<a class="dropdown-item" href="#">Link1</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3" align="center">
+							<div class="btn-group">
+								<button type="button" class="btn btncolor btnsize" style="font-size: 16px;">Time</button>
+								<button type="button" class="btn btncolor dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"></button>
+								<div class="dropdown-menu">
+									<a class="dropdown-item" href="#">9:00 AM</a>
+									<a class="dropdown-item" href="#">9:15 AM</a>
+									<a class="dropdown-item" href="#">9:30 AM</a>
+									<a class="dropdown-item" href="#">9:45 AM</a>
+									<a class="dropdown-item" href="#">10:00 AM</a>
+									<a class="dropdown-item" href="#">10:15 AM</a>
+									<a class="dropdown-item" href="#">10:30 AM</a>
+									<a class="dropdown-item" href="#">10:45 AM</a>
+									<a class="dropdown-item" href="#">11:00 AM</a>
+									<a class="dropdown-item" href="#">11:15 AM</a>
+									<a class="dropdown-item" href="#">11:30 AM</a>
+									<a class="dropdown-item" href="#">11:45 AM</a>
+									<a class="dropdown-item" href="#">12:00 PM</a>
+									<a class="dropdown-item" href="#">12:15 PM</a>
+									<a class="dropdown-item" href="#">12:30 PM</a>
+									<a class="dropdown-item" href="#">12:45 PM</a>
+									<a class="dropdown-item" href="#">1:00 PM</a>
+									<a class="dropdown-item" href="#">1:15 PM</a>
+									<a class="dropdown-item" href="#">1:30 PM</a>
+									<a class="dropdown-item" href="#">1:45 PM</a>
+									<a class="dropdown-item" href="#">2:00 PM</a>
+									<a class="dropdown-item" href="#">2:15 PM</a>
+									<a class="dropdown-item" href="#">2:30 PM</a>
+									<a class="dropdown-item" href="#">2:45 PM</a>
+									<a class="dropdown-item" href="#">3:00 PM</a>
+									<a class="dropdown-item" href="#">3:15 PM</a>
+									<a class="dropdown-item" href="#">3:30 PM</a>
+									<a class="dropdown-item" href="#">3:45 PM</a>
+									<a class="dropdown-item" href="#">4:00 PM</a>
+									<a class="dropdown-item" href="#">4:15 PM</a>
+									<a class="dropdown-item" href="#">4:30 PM</a>
+									<a class="dropdown-item" href="#">4:45 PM</a>
+									<a class="dropdown-item" href="#">5:00 PM</a>
+									<a class="dropdown-item" href="#">5:15 PM</a>
+									<a class="dropdown-item" href="#">5:30 PM</a>
+									<a class="dropdown-item" href="#">5:45 PM</a>
+									<a class="dropdown-item" href="#">6:00 PM</a>
+									<a class="dropdown-item" href="#">6:15 PM</a>
+									<a class="dropdown-item" href="#">6:30 PM</a>
+									<a class="dropdown-item" href="#">6:45 PM</a>
+									<a class="dropdown-item" href="#">7:00 PM</a>
+									<a class="dropdown-item" href="#">7:15 PM</a>
+									<a class="dropdown-item" href="#">7:30 PM</a>
+									<a class="dropdown-item" href="#">7:45 PM</a>
+									<a class="dropdown-item" href="#">8:00 PM</a>
+									<a class="dropdown-item" href="#">8:15 PM</a>
+									<a class="dropdown-item" href="#">8:30 PM</a>
+									<a class="dropdown-item" href="#">8:45 PM</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3" align="center">
+							<div class="btn-group">
+								<button type="button" class="btn btncolor btnsize" style="font-size: 16px;">Party Size</button>
+								<button type="button" class="btn btncolor dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"></button>
+								<div class="dropdown-menu">
+									<a class="dropdown-item" href="#">1 Person</a>
+									<a class="dropdown-item" href="#">2 People</a>
+									<a class="dropdown-item" href="#">3 People</a>
+									<a class="dropdown-item" href="#">4 People</a>
+									<a class="dropdown-item" href="#">5 People</a>
+									<a class="dropdown-item" href="#">6 People</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3" align="center">
+							<button type="button" class="btn booknow" style="width: 200px; height: 40px;">Book Now</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+<!-- ************** Reservation ************* -->
+
+<!-- ************** Footer ************* -->
+<div class="row bg1">
+      <div class="col-md-12">
+      <div class="row" style="margin-top: 2%;">
+        <div class="col-md-4">
+          <div class="footeralignbox">
+          <span class="footerlabel1">Address and Phone Number:</span>
+          <br>
+          <p class="footerlabel2">
+            Ground Floor Unit GF 058, Vista Mall Bataan Brgy. Cupang, Balanga, Bataan<br>
+            0917-5160449
+          </p>
+          </div>
+        </div>
+        <div class="col-md-4" style="margin-top: 2%;">
+          <div class="footeralignbox">
+          <span class="footerlabel1">Opening Hours:</span>
+          <br>
+          <p class="footerlabel2">
+            Monday-Friday: 7:00Am-10:00PM<br>
+            Saturday: 9:00AM-10:00PM<br>
+            Sunday: 8:00AM-11:00PM
+          </p>
+          </div>
+        </div>
+        <div class="col-md-4" style="margin-top: 2%;">
+          <div class="footeralignbox">
+          <span class="footerlabel1">Join Our Mailing List</span><br>
+          <input type="text" name="mailing" placeholder="Email Address:" class="email">
+          <button type="button" class="btn btnwidth">Submit</button>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8" style="margin-top: 2%;">
+          <div class="footeralignbox">
+            <ul class="nav">
+              <li class="nav-item">
+                  <a class="nav-link" href="aboutus.html">About us</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact us</a>
+              </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="promotion.html">Promotion</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="services.html">Service</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href=".html">FAQ</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footeralignbox1">
+            <br>
+            <span class="footerlabel1">Join us on:</span><br>
+            <a href="#" class="social"><i class="fa fa-facebook" style="padding: 10px; font-size: 20px; width: 40px;text-align: center; margin: 5px 2px;"></i></a>
+            <a href="#" class="social"><i class="fa fa-twitter" style="padding: 10px; font-size: 20px; width: 40px;text-align: center; margin: 5px 2px;"></i></a>
+            <a href="#" class="social"><i class="fa fa-instagram" style="padding: 10px; font-size: 20px; width: 40px;text-align: center; margin: 5px 2px;"></i></a>
+            <a href="#" class="social"><i class="fa fa-foursquare" style="padding: 10px; font-size: 20px; width: 40px;text-align: center; margin: 5px 2px;"></i></a>
+          </div>
+        </div>
+        <div class="col-md-2"></div>
+        </
+      </div>
+      </div>
+    </div>
+<!-- ************** Footer ************* -->
+
+	</div>
+
+<script type="text/javascript">
+  var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+} 
+</script>
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+</body>
+</html>

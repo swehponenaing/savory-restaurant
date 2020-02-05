@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script type="text/javascript">
+	$(document).ready(function(){
+			$("#i1").click(function(){
+				$("#a1").slideToggle("slow");
+			});
+			$("#i2").click(function(){
+				$("#a2").slideToggle("slow");
+			});
+			$("#i3").click(function(){
+				$("#a3").slideToggle("slow");
+			});
+			$("#i4").click(function(){
+				$("#a4").slideToggle("slow");
+			});
+			$("#i5").click(function(){
+				$("#a5").slideToggle("slow");
+			});
+			$("#i6").click(function(){
+				$("#a6").slideToggle("slow");
+			});
+			$("#i7").click(function(){
+				$("#a7").slideToggle("slow");
+			});
+			$("#i8").click(function(){
+				$("#a8").slideToggle("slow");
+			});
+			$("#i9").click(function(){
+				$("#a9").slideToggle("slow");
+			});
+			$("#i10").click(function(){
+				$("#a10").slideToggle("slow");
+			});
+		});
+</script>
+<style type="text/css">
+	@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon/icomoon.eot?srf3rx");
+  src: url("../fonts/icomoon/icomoon.eot?srf3rx#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.ttf?srf3rx") format("truetype"), url("../fonts/icomoon/icomoon.woff?srf3rx") format("woff"), url("../fonts/icomoon/icomoon.svg?srf3rx#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+#logo{
+  color: black;
+  font-size: 30px;
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-weight: bold;
+  margin-top: 0%;
+  margin-left: 4%;
+}
+#logo:hover{
+  color: red;
+  transition: 1s;
+  font-size: 33px;
+}
+.topnav {
+  overflow: hidden;
+  /* width: 100%; */
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 16px 16px;
+  text-decoration: none;
+  font-family: Helvetica;
+  font-size: 17px;
+  margin-top: 1%;
+
+}
+
+.dropdown {
+    float: left;
+    overflow:hidden;
+    margin-top: 1%;
+  }
+
+.dropdown .dropbtn {
+    font-size: 17px;
+    border: none;
+    outline: none;
+    color: black;
+    padding: 16px 16px;
+    background-color: inherit;
+    font-family: Helvetica;
+}
+
+
+.dropdown-content {
+    display: none;
+    position:fixed;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+  color: red;
+  text-decoration: none;
+  font-size: 22px;
+  transition: 0.5s;
+
+}
+
+.dropdown-content a:hover {
+    color: red;
+    text-decoration: none;
+    font-size: 22px;
+    transition: 0.5s;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    animation-duration: 1s;
+    transform-style:flat;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display:block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+.faqimg{
+	background-image: url(image/faqbackground.png);
+	min-height: 600px;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+.center{
+	margin: auto;
+    width: 60%;
+    padding: 5px 0;
+    margin-top: 12%;
+}
+.label1{
+	font: "freight-sans-pro";
+	font-size: 55px;
+	text-transform: uppercase;
+	color: white;
+	font-weight: 100;
+}
+.label2{
+	font-family: "freight-sans-pro",Arial,Helvetica,sans-serif;
+	font-size: 17px;
+	color: #ffe894;
+}
+#a1, #a2, #a3, #a4, #a5, #a6, #a7, #a8, #a9, #a10, #a11, #a12, #a13, #a14, #a15{
+	display: none;
+	font: normal normal normal 20px/1.4em Helvetica;
+}
+#i1, #i2, #i3, #i4, #i5, #i6, #i7, #i8, #i9, #i10, #i11, #i12, #i13, #i14, #i15{
+	font: normal normal normal 26px/1.4em Helvetica;
+	color: black;
+	font-weight: 100;
+}
+.bg{
+	background-color: #f1f1f1;
+	min-height: 600px;
+}
+
+.footerlabel1{
+  font: normal normal normal 20px/1.4em Helvetica;
+  color: white;
+  font-weight: bold;
+}
+.footerlabel2{
+  font: normal normal normal 16px/1.4em Helvetica;
+  color: white;
+}
+.bg1{
+  background-color: black;
+}
+.email {
+    width: 100%;
+    padding: 5px 15px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+.email:focus {
+    border: 3px solid #555;
+}
+.btnwidth{
+  width: 100%;
+}
+.footeralignbox{
+  margin-left: 20%;
+  margin-right: 20%;
+}
+.footeralignbox1{
+  margin-left: 21%;
+}
+.nav-link{
+  font: normal normal normal 20px/1.4em Helvetica;
+  color: white;
+}
+.nav-link:hover{
+  color: red;
+}
+.social:hover{
+  opacity: 0.7;
+}
+
+.fa-facebook{
+  background: #3B5998;
+  color: white;
+}
+.fa-twitter{
+  background: #55ACEE;
+  color: white;
+}
+.fa-instagram{
+  background: #125688;
+  color: white;
+}
+.fa-foursquare{
+  background: #45bbff;
+  color: white;
+}
+
+</style>
+</head>
+<body>
+<!-- ************** Nav *************** -->
+<div class="topnav navbar-light bg-light navbar-fixed-top" id="myTopnav">
+  <a href="#top" class="navbar-brand" id="logo">Savory</a>
+  <a href="index.html" id="links">Home</a>
+  <a href="aboutus.html" id="links">About Us</a>
+  <div class="dropdown id="links"">
+    <button class="dropbtn dd">Menu
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="chicken.html">Chicken</a>
+      <a href="rice.html">Rice & Dishes</a>
+      <a href="noodle.html">Noodle</a>
+      <a href="drinks.html">Drinks</a>
+      <a href="myanmar.html">Myanmar Foods</a>
+    </div>
+  </div>
+  <a href="gallery.html" id="links">Gallery</a>
+  <a href="promotion.html" id="links">Promotion</a>
+  <a href="services.html" id="links">Service</a>
+  <a href="contact.html" id="links">Contact</a>
+  <a href="ourchefs.html">Our Chefs</a>
+  <a href="faq.html" id="links">FAQ</a>
+  <a href="#" id="links"><i class="fa fa-shopping-cart" style="color:black; font-size: 25px;"></i><span id="count" style="color:black; font-size: 20px;"><sup>0</sup></span></a>
+  <a href="javascript:void(0);" style="font-size:16px;" class="icon" onclick="myFunction()">&#9776;</a>
+
+</div>  
+<!-- ************** Nav *************** -->
+<!-- ************** Container ************* -->
+	<div class="container-fluid">
+	<!-- ************** First Row ************* -->
+	<div class="row">
+		<div class="col-md-12 faqimg">
+			<div class="center" align="center">
+				<h1 class="label1">Questions?</h1>
+				<h2 class="label2">Please ask. We&rsquo;re always happy to help.</h2>
+			</div>
+		</div>
+	</div>
+	<!-- **************  End First Row ************* -->
+	<div class="row bg">
+		<div class="col-md-12">
+	<!-- ************** FAQ Title ************* -->
+			<div class="row titleline">
+				<div class="col-md-5"></div>
+				<div class="col-md-2 title">
+					<h2 align="center">FAQ</h2>
+				</div>
+				<div class="col-md-5"></div>
+			</div>
+	<!-- ************** End FAQ Title ************* -->
+	<br>
+	<!-- ************** Second Row ************* -->
+			<div class="row">
+				<div class="col-md-2"></div>
+				<div class="col-md-8" align="center">
+					<p id="i1">Do you have private rooms available?</p>
+					<p id="a1">
+						Our restaurants are set up with communal picnic tables and family-style seating. We do not have private rooms at our Smokehouses but do welcome large groups to dine with us. Additionally, we have many options available through our Catering Department if you’re looking for something more private.
+					</p>
+
+					<p id="i2">What are your Holiday Hours?</p>
+					<p id="a2">
+						We are closed on the following holidays:<br>
+						-New Year’s Day<br>
+						-Thanksgiving<br>
+						-Christmas Day<br>
+						-Thingyan Day<br>
+					</p>
+
+					<p id="i3">Do you deliver?</p>
+					<p id="a3">
+						We provide delivery services through our Catering Department. You can view our catering menu online. For catering orders, please feel free to call 0917-5160449.
+					</p>
+
+					<p id="i4">Are you a full service restaurant and do you take reservations?</p>
+					<p id="a4">
+						We are a fast-casual dining establishment and we do take reservations.
+					</p>
+
+					<p id="i5">What are your open hours?</p>
+					<p id="a5">
+						Our open hours are:<br>
+						Monday-Friday: 7:00Am-10:00PM<br>
+						Saturday: 9:00AM-10:00PM<br>
+						Sunday: 8:00AM-11:00PM
+					</p>
+
+					<p id="i6">Do you have car parking?</p>
+					<p id="a6">
+						Yes, we do have a car parking area for our customers.
+					</p>
+
+					<p id="i7">Do you franchise?</p>
+					<p id="a7">
+						Yes, our company give franchise.
+					</p>
+
+					<p id="i8">Does Savory Restaurant offer donations?</p>
+					<p id="a8">
+						Yes, we do. Please contact our Donations Coordinator using our donation form.
+					</p>
+
+					<p id="i9">What is the best way to contact Savory Restaurant?</p>
+					<p id="a9">
+						Please contact us through our contact form.
+					</p>
+
+					<p id="i10">Do you have nutritional information?</p>
+					<p id="a10">
+						We do not have nutritional information for our menu items. We do however offer allergen information which is available through our menu.
+					</p>
+
+				</div>
+				<div class="col-md-2"></div>
+			</div>
+		</div>
+	</div>
+	<!-- ************** End Second Row ************* -->
+
+	<!-- ************** Footer ************* -->
+<div class="row bg1">
+      <div class="col-md-12">
+      <div class="row" style="margin-top: 2%;">
+        <div class="col-md-4">
+          <div class="footeralignbox">
+          <span class="footerlabel1">Address and Phone Number:</span>
+          <br>
+          <p class="footerlabel2">
+            Ground Floor Unit GF 058, Vista Mall Bataan Brgy. Cupang, Balanga, Bataan<br>
+            0917-5160449
+          </p>
+          </div>
+        </div>
+        <div class="col-md-4" style="margin-top: 2%;">
+          <div class="footeralignbox">
+          <span class="footerlabel1">Opening Hours:</span>
+          <br>
+          <p class="footerlabel2">
+            Monday-Friday: 7:00Am-10:00PM<br>
+            Saturday: 9:00AM-10:00PM<br>
+            Sunday: 8:00AM-11:00PM
+          </p>
+          </div>
+        </div>
+        <div class="col-md-4" style="margin-top: 2%;">
+          <div class="footeralignbox">
+          <span class="footerlabel1">Join Our Mailing List</span><br>
+          <input type="text" name="mailing" placeholder="Email Address:" class="email">
+          <button type="button" class="btn btnwidth">Submit</button>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8" style="margin-top: 2%;">
+          <div class="footeralignbox">
+            <ul class="nav">
+              <li class="nav-item">
+                  <a class="nav-link" href="aboutus.html">About us</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact us</a>
+              </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="promotion.html">Promotion</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="services.html">Service</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="faq.html">FAQ</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footeralignbox1">
+            <br>
+            <span class="footerlabel1">Join us on:</span><br>
+            <a href="#" class="social"><i class="fa fa-facebook" style="padding: 10px; font-size: 20px; width: 40px;text-align: center; margin: 5px 2px;"></i></a>
+            <a href="#" class="social"><i class="fa fa-twitter" style="padding: 10px; font-size: 20px; width: 40px;text-align: center; margin: 5px 2px;""></i></a>
+            <a href="#" class="social"><i class="fa fa-instagram" style="padding: 10px; font-size: 20px; width: 40px;text-align: center; margin: 5px 2px;"></i></a>
+            <a href="#" class="social"><i class="fa fa-foursquare" style="padding: 10px; font-size: 20px; width: 40px;text-align: center; margin: 5px 2px;"></i></a>
+          </div>
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+      </div>
+    </div>
+<!-- ************** Footer ************* -->
+</div>
+<!-- ************** End Container ************* -->
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+</body>
+</html>
